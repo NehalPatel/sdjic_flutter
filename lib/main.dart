@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sdjic_flutter/buttondemo.dart';
 import 'package:sdjic_flutter/textdemo.dart';
+import 'package:sdjic_flutter/textfielddemo.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,8 +9,12 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: MyStatefulWidget(),
+      routes: {
+        '/textdemo' : (_) => TextDemo(),
+        '/textfielddemo' : (_) => TextFieldDemo()
+      },
     );
   }
 }
@@ -71,14 +76,15 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               title: Text("Text"),
               leading: Icon(Icons.inbox),
               onTap: () {
-                Navigator.push(context,
-                  MaterialPageRoute(builder: (builder) => TextDemo())
-                );
+                Navigator.pushNamed(context, '/textdemo');
               },
             ),
-            const ListTile(
+            ListTile(
               title: Text("TextField"),
               leading: Icon(Icons.people),
+              onTap: () {
+                Navigator.pushNamed(context, '/textfielddemo');
+              },
             ),
             ListTile(
               title: const Text("Buttons"),
