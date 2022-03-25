@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sdjic_flutter/buttondemo.dart';
+import 'package:sdjic_flutter/formdemo.dart';
 import 'package:sdjic_flutter/textdemo.dart';
 import 'package:sdjic_flutter/textfielddemo.dart';
 
@@ -10,34 +11,35 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyStatefulWidget(),
+      home: HomePage(),
       routes: {
         '/textdemo' : (_) => TextDemo(),
-        '/textfielddemo' : (_) => TextFieldDemo()
+        '/textfielddemo' : (_) => TextFieldDemo(),
+        '/formdemo' : (_) => FormDemo(),
       },
     );
   }
 }
 
-class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({Key? key}) : super(key: key);
-
-  @override
-  _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
-}
-
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  int _count = 0;
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('SDJ International College'),
+        title: const Text('SDJ International College SYBCA'),
         centerTitle: true,
       ),
       body: Center(
-        child: Text('We have pressed the button $_count times.'),
+        child: Column(
+          children: [
+            ElevatedButton(
+                child: const Text("Form Demo"),
+                onPressed: () => {},
+            ),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         shape: const CircularNotchedRectangle(),
@@ -46,9 +48,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => setState(() {
-          _count++;
-        }),
+        onPressed: () => {},
         tooltip: 'Increment Counter',
         child: const Icon(Icons.add),
       ),
@@ -91,8 +91,15 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               leading: const Icon(Icons.local_offer),
               onTap: (){
                 Navigator.push(context,
-                  MaterialPageRoute(builder: (builder) => ButtonDemo())
+                    MaterialPageRoute(builder: (builder) => ButtonDemo())
                 );
+              },
+            ),
+            ListTile(
+              title: const Text("Form Demo"),
+              leading: const Icon(Icons.add_alert),
+              onTap: (){
+                Navigator.pushNamed(context, '/formdemo');
               },
             )
           ],
