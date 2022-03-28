@@ -1,21 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:sdjic_flutter/buttondemo.dart';
+import 'package:sdjic_flutter/drawer.dart';
 import 'package:sdjic_flutter/formdemo.dart';
 import 'package:sdjic_flutter/textdemo.dart';
 import 'package:sdjic_flutter/textfielddemo.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 /// This Widget is the main application widget.
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      home: const HomePage(),
+      debugShowCheckedModeBanner: false,
       routes: {
-        '/textdemo' : (_) => TextDemo(),
-        '/textfielddemo' : (_) => TextFieldDemo(),
-        '/formdemo' : (_) => FormDemo(),
+        '/textdemo': (_) => const TextDemo(),
+        '/textfielddemo': (_) => const TextFieldDemo(),
+        '/formdemo': (_) => const FormDemo(),
       },
     );
   }
@@ -28,83 +31,21 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('SDJ International College SYBCA'),
+        title: const Text('SDJ International College'),
         centerTitle: true,
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-                child: const Text("Form Demo"),
-                onPressed: () => {},
+              child: const Text("Form Demo"),
+              onPressed: () => {},
             ),
           ],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        shape: const CircularNotchedRectangle(),
-        child: Container(
-          height: 50.0,
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => {},
-        tooltip: 'Increment Counter',
-        child: const Icon(Icons.add),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
-      drawer: Drawer(
-        elevation: 20.0,
-        child: Column(
-          children: <Widget>[
-            const UserAccountsDrawerHeader(
-              accountName: Text("SYBCA-D"),
-              accountEmail: Text("sdjic@gmail.com"),
-              currentAccountPicture: CircleAvatar(
-                backgroundColor: Colors.red,
-                child: Text("SDJIC"),
-              ),
-            ),
-            const ListTile(
-              title: Text("Home"),
-              leading: Icon(Icons.mail),
-            ),
-            const Divider(
-              height: 0.1,
-            ),
-            ListTile(
-              title: Text("Text"),
-              leading: Icon(Icons.inbox),
-              onTap: () {
-                Navigator.pushNamed(context, '/textdemo');
-              },
-            ),
-            ListTile(
-              title: Text("TextField"),
-              leading: Icon(Icons.people),
-              onTap: () {
-                Navigator.pushNamed(context, '/textfielddemo');
-              },
-            ),
-            ListTile(
-              title: const Text("Buttons"),
-              leading: const Icon(Icons.local_offer),
-              onTap: (){
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (builder) => ButtonDemo())
-                );
-              },
-            ),
-            ListTile(
-              title: const Text("Form Demo"),
-              leading: const Icon(Icons.add_alert),
-              onTap: (){
-                Navigator.pushNamed(context, '/formdemo');
-              },
-            )
-          ],
-        ),
-      ),
+      drawer: const MyDrawer(),
     );
   }
 }
