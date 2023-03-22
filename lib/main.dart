@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sdjic_flutter/Screens/Section1/button_page.dart';
 import 'package:sdjic_flutter/Screens/Section1/text_page.dart';
+import 'package:sdjic_flutter/Screens/Section1/textfield_page.dart';
 import 'package:sdjic_flutter/Screens/home_page.dart';
 
 void main() {
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/' : (context) => HomePage(),
         '/s1/text' : (context) => TextDemoPage(),
+        '/s1/textfield' : (context) => TextFieldPage(),
+        '/s1/buttons' : (context) => ButtonPage(),
       },
       initialRoute: "/",
     );

@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s1/textfield");
                       },
                       child: Card(
                         child: ListTile(
@@ -71,7 +71,7 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s1/buttons");
                       },
                       child: Card(
                         child: ListTile(
