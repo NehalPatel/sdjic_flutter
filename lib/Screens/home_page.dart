@@ -83,13 +83,25 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s1/slider");
                       },
                       child: Card(
                         child: ListTile(
-                          leading: Icon(Icons.slideshow_rounded),
+                          leading: Icon(Icons.slideshow),
                           title: Text("Slider Widget"),
                           subtitle: Text("Display all Slider widget option"),
+                        ),
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, "/s1/image_slider");
+                      },
+                      child: Card(
+                        child: ListTile(
+                          leading: Icon(Icons.favorite),
+                          title: Text("Image Slider Widget"),
+                          subtitle: Text("Display all Image Slider widget option"),
                         ),
                       ),
                     ),

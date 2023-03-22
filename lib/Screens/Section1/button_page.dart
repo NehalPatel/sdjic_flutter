@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:sdjic_flutter/Screens/Section1/mydropdown_button.dart';
 import 'package:sdjic_flutter/components/my_drawer.dart';
 import 'package:sdjic_flutter/components/my_popup_menu.dart';
 
@@ -21,11 +22,14 @@ class ButtonPage extends StatelessWidget {
         child: Center(
           child: Column(
             children: [
+              Text("Text Button"),
               TextButton(
                 child: Text('Text Button'),
                 onPressed: () {},
               ),
               SizedBox(height: 10,),
+              Divider(color: Colors.red),
+              Text("Text Button with Style"),
               TextButton(
                 child: Text('Text Button',
                   style: TextStyle(
@@ -37,14 +41,30 @@ class ButtonPage extends StatelessWidget {
                 onPressed: () {},
               ),
               SizedBox(height: 10,),
-              // DropdownButtonHideUnderline(
-              //     child: DropdownButton(
-              //       items: [
-              //
-              //       ],
-              //     ),
-              // ),
-
+              Divider(color: Colors.red),
+              Text("Elevated Button"),
+              ElevatedButton(
+                  onPressed: (){},
+                  child: Text("Elevated Button")
+              ),
+              SizedBox(height: 10,),
+              Divider(color: Colors.red),
+              Text("Outlined Button"),
+              OutlinedButton(
+                  onPressed: (){},
+                  child: Text("Outlined Button")
+              ),
+              SizedBox(height: 10,),
+              Divider(color: Colors.red),
+              Text("Icon Button"),
+              IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.logout)
+              ),
+              Divider(color: Colors.red),
+              Text("Dropdown Button"),
+              MyDropdownButton(), //visit mydropdown_button.dart file
+              
             ],
           ),
         ),
