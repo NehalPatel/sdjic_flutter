@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sdjic_flutter/components/my_drawer.dart';
 import 'package:sdjic_flutter/components/my_popup_menu.dart';
 
 class HomePage extends StatelessWidget {
@@ -18,28 +19,7 @@ class HomePage extends StatelessWidget {
           MyPopupMenu()
         ],
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            const DrawerHeader(
-                decoration: BoxDecoration(
-                  color: Colors.blue
-                ),
-                child: Text("SYBCA - Sem 4"),
-            ),
-            ListTile(
-              leading: Icon(Icons.account_circle),
-              title: const Text("About"),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.contact_mail),
-              title: const Text("Contact"),
-              onTap: () {},
-            ),
-          ],
-        ),
-      ),
+      drawer: MyDrawer(),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(
@@ -53,12 +33,12 @@ class HomePage extends StatelessWidget {
                     "assets/images/SDJIC.png", width: 300,
                 ),
               ),
-              SizedBox(height: 10),
-              Text("SDJIC - Flutter", style: TextStyle(
+              const SizedBox(height: 10),
+              const Text("SDJIC - Flutter", style: TextStyle(
                 fontSize: 20, fontWeight: FontWeight.bold, color: Colors.brown
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Padding(
                 padding: EdgeInsets.all(10),
                 child: Column(
@@ -67,7 +47,7 @@ class HomePage extends StatelessWidget {
                     Divider(),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s1/text");
                       },
                       child: Card(
                         child: ListTile(
