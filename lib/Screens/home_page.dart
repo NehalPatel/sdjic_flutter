@@ -12,11 +12,33 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("SDJIC"),
+        title: const Text("SDJIC"),
         centerTitle: true,
-        actions: [
+        actions: const [
           MyPopupMenu()
         ],
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            const DrawerHeader(
+                decoration: BoxDecoration(
+                  color: Colors.blue
+                ),
+                child: Text("SYBCA - Sem 4"),
+            ),
+            ListTile(
+              leading: Icon(Icons.account_circle),
+              title: const Text("About"),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: Icon(Icons.contact_mail),
+              title: const Text("Contact"),
+              onTap: () {},
+            ),
+          ],
+        ),
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
