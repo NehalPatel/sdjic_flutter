@@ -121,7 +121,7 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s2/radio");
                       },
                       child: Card(
                         child: ListTile(
@@ -133,7 +133,7 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s2/progress");
                       },
                       child: Card(
                         child: ListTile(
