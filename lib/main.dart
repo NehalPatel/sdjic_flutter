@@ -4,7 +4,12 @@ import 'package:sdjic_flutter/Screens/Section1/imageslider_page.dart';
 import 'package:sdjic_flutter/Screens/Section1/slider_page.dart';
 import 'package:sdjic_flutter/Screens/Section1/text_page.dart';
 import 'package:sdjic_flutter/Screens/Section1/textfield_page.dart';
+import 'package:sdjic_flutter/Screens/Section2/basic_listview_page.dart';
 import 'package:sdjic_flutter/Screens/Section2/checkbox_page.dart';
+import 'package:sdjic_flutter/Screens/Section2/grid_listview_page.dart';
+import 'package:sdjic_flutter/Screens/Section2/horizontal_listview_page.dart';
+import 'package:sdjic_flutter/Screens/Section2/listview_page.dart';
+import 'package:sdjic_flutter/Screens/Section2/long_listview_page.dart';
 import 'package:sdjic_flutter/Screens/Section2/progressbar_page.dart';
 import 'package:sdjic_flutter/Screens/Section2/radiobutton_page.dart';
 import 'package:sdjic_flutter/Screens/home_page.dart';
@@ -34,6 +39,11 @@ class MyApp extends StatelessWidget {
         '/s2/checkbox' : (context) => CheckboxPage(),
         '/s2/radio' : (context) => RadioButtonPage(),
         '/s2/progress' : (context) => ProgressBarPage(),
+        '/s2/listview' : (context) => ListViewPage(),
+        '/s2/listview/basic' : (context) => BasicListViewPage(),
+        '/s2/listview/long' : (context) => LongListViewPage(),
+        '/s2/listview/grid' : (context) => GridListViewPage(),
+        '/s2/listview/horizontal' : (context) => HorizontalListViewPage(),
       },
       initialRoute: "/",
     );

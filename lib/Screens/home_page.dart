@@ -145,7 +145,7 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s2/listview");
                       },
                       child: Card(
                         child: ListTile(
