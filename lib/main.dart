@@ -12,6 +12,7 @@ import 'package:sdjic_flutter/Screens/Section2/listview_page.dart';
 import 'package:sdjic_flutter/Screens/Section2/long_listview_page.dart';
 import 'package:sdjic_flutter/Screens/Section2/progressbar_page.dart';
 import 'package:sdjic_flutter/Screens/Section2/radiobutton_page.dart';
+import 'package:sdjic_flutter/Screens/Section3/stack_page.dart';
 import 'package:sdjic_flutter/Screens/home_page.dart';
 
 void main() {
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
         '/s2/listview/long' : (context) => LongListViewPage(),
         '/s2/listview/grid' : (context) => GridListViewPage(),
         '/s2/listview/horizontal' : (context) => HorizontalListViewPage(),
+        '/s3/stack' : (context) => StackPage(),
       },
       initialRoute: "/",
     );

@@ -159,7 +159,7 @@ class HomePage extends StatelessWidget {
                     Divider(),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s3/stack");
                       },
                       child: Card(
                         child: ListTile(
