@@ -109,7 +109,7 @@ class HomePage extends StatelessWidget {
                     Divider(),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s2/checkbox");
                       },
                       child: Card(
                         child: ListTile(
