@@ -31,7 +31,9 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.account_circle),
             title: const Text("About"),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, "/about");
+            },
           ),
           ListTile(
             leading: Icon(Icons.contact_mail),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sdjic_flutter/components/my_drawer.dart';
 import 'package:sdjic_flutter/components/my_popup_menu.dart';
 
@@ -209,7 +210,7 @@ class HomePage extends StatelessWidget {
                     Divider(),
                     GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, "/s4/toastpage");
+                        Navigator.pushNamed(context, "/s4/toast");
                       },
                       child: Card(
                         child: ListTile(
@@ -221,7 +222,7 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, "/s4/switchpage");
+                        Navigator.pushNamed(context, "/s4/switch");
                       },
                       child: Card(
                         child: ListTile(
@@ -233,7 +234,12 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Fluttertoast.showToast(
+                            msg: "Coming Soon",
+                            toastLength: Toast.LENGTH_LONG,
+                            gravity: ToastGravity.BOTTOM,
+                            backgroundColor: Colors.red
+                        );
                       },
                       child: Card(
                         child: ListTile(
@@ -245,7 +251,12 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Fluttertoast.showToast(
+                            msg: "Coming Soon",
+                            toastLength: Toast.LENGTH_LONG,
+                            gravity: ToastGravity.BOTTOM,
+                            backgroundColor: Colors.red
+                        );
                       },
                       child: Card(
                         child: ListTile(

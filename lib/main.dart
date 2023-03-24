@@ -16,9 +16,13 @@ import 'package:sdjic_flutter/Screens/Section3/alert_dialog_page.dart';
 import 'package:sdjic_flutter/Screens/Section3/form_page.dart';
 import 'package:sdjic_flutter/Screens/Section3/stack_page.dart';
 import 'package:sdjic_flutter/Screens/Section3/tooltips_page.dart';
+import 'package:sdjic_flutter/Screens/Section4/chart_page.dart';
+import 'package:sdjic_flutter/Screens/Section4/flutter_form_page.dart';
 import 'package:sdjic_flutter/Screens/Section4/switch_page.dart';
 import 'package:sdjic_flutter/Screens/Section4/toast_page.dart';
 import 'package:sdjic_flutter/Screens/home_page.dart';
+
+import 'Screens/about_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,6 +41,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         '/' : (context) => HomePage(),
+        '/about' : (context) => AboutPage(),
         '/s1/text' : (context) => TextDemoPage(),
         '/s1/textfield' : (context) => TextFieldPage(),
         '/s1/buttons' : (context) => ButtonPage(),
@@ -54,8 +59,8 @@ class MyApp extends StatelessWidget {
         '/s3/form' : (context) => FormPage(),
         '/s3/alertdialog' : (context) => AlertDialogPage(),
         '/s3/tooltips' : (context) => ToolTipsPage(),
-        '/s4/toastpage' : (context) => ToastPage(),
-        '/s4/switchpage' : (context) => SwitchPage(),
+        '/s4/toast' : (context) => ToastPage(),
+        '/s4/switch' : (context) => SwitchPage(),
       },
       initialRoute: "/",
     );

@@ -20,11 +20,7 @@ class ImageSliderPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Image Slider Widget Demo"),
-        actions: const [
-          MyPopupMenu()
-        ],
       ),
-      drawer: MyDrawer(),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(8.0),

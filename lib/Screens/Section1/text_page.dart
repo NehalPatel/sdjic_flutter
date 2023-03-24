@@ -11,11 +11,7 @@ class TextDemoPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Text Widget Demo"),
-        actions: const [
-          MyPopupMenu()
-        ],
       ),
-      drawer: MyDrawer(),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(8.0),

@@ -12,11 +12,7 @@ class ButtonPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Buttons Widget Demo"),
-        actions: const [
-          MyPopupMenu()
-        ],
       ),
-      drawer: MyDrawer(),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Padding(

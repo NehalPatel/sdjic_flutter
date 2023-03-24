@@ -11,11 +11,7 @@ class TextFieldPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("TextField Widget Demo"),
-        actions: const [
-          MyPopupMenu()
-        ],
       ),
-      drawer: MyDrawer(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(

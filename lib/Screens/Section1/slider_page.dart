@@ -18,11 +18,7 @@ class _SliderPageState extends State<SliderPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Slider Widget Demo"),
-        actions: const [
-          MyPopupMenu()
-        ],
       ),
-      drawer: MyDrawer(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Center(
