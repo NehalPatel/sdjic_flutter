@@ -195,7 +195,7 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s3/tooltips");
                       },
                       child: Card(
                         child: ListTile(
@@ -209,7 +209,7 @@ class HomePage extends StatelessWidget {
                     Divider(),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s4/toastpage");
                       },
                       child: Card(
                         child: ListTile(
@@ -221,7 +221,7 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s4/switchpage");
                       },
                       child: Card(
                         child: ListTile(

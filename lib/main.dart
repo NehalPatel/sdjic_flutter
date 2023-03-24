@@ -15,6 +15,9 @@ import 'package:sdjic_flutter/Screens/Section2/radiobutton_page.dart';
 import 'package:sdjic_flutter/Screens/Section3/alert_dialog_page.dart';
 import 'package:sdjic_flutter/Screens/Section3/form_page.dart';
 import 'package:sdjic_flutter/Screens/Section3/stack_page.dart';
+import 'package:sdjic_flutter/Screens/Section3/tooltips_page.dart';
+import 'package:sdjic_flutter/Screens/Section4/switch_page.dart';
+import 'package:sdjic_flutter/Screens/Section4/toast_page.dart';
 import 'package:sdjic_flutter/Screens/home_page.dart';
 
 void main() {
@@ -50,6 +53,9 @@ class MyApp extends StatelessWidget {
         '/s3/stack' : (context) => StackPage(),
         '/s3/form' : (context) => FormPage(),
         '/s3/alertdialog' : (context) => AlertDialogPage(),
+        '/s3/tooltips' : (context) => ToolTipsPage(),
+        '/s4/toastpage' : (context) => ToastPage(),
+        '/s4/switchpage' : (context) => SwitchPage(),
       },
       initialRoute: "/",
     );
