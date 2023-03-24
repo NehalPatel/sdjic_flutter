@@ -171,7 +171,7 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s3/form");
                       },
                       child: Card(
                         child: ListTile(
@@ -183,7 +183,7 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('clicked');
+                        Navigator.pushNamed(context, "/s3/alertdialog");
                       },
                       child: Card(
                         child: ListTile(
