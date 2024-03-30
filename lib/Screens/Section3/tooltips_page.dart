@@ -7,14 +7,14 @@ class ToolTipsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Tooltip Example'),
+          title: const Text('Tooltip Example'),
         ),
         body: Center(
           child: Tooltip(
             message: 'This is a tooltip',
             child: ElevatedButton(
               onPressed: () {},
-              child: Text('Press me'),
+              child: const Text('Press me'),
             ),
           ),
         ),

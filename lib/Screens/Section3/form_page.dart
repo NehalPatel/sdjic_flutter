@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class FormPage extends StatefulWidget {
+  const FormPage({super.key});
+
   @override
   _FormPageState createState() => _FormPageState();
 }
@@ -15,17 +17,17 @@ class _FormPageState extends State<FormPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sign Up Form'),
+        title: const Text('Sign Up Form'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Form(
           key: _formKey,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   hintText: 'Enter your name',
                   icon: Icon(Icons.account_circle),
                 ),
@@ -40,7 +42,7 @@ class _FormPageState extends State<FormPage> {
                 },
               ),
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   hintText: 'Enter your email',
                   icon: Icon(Icons.email),
                 ),
@@ -55,7 +57,7 @@ class _FormPageState extends State<FormPage> {
                 },
               ),
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   hintText: 'Enter your password',
                   icon: Icon(Icons.lock),
                 ),
@@ -81,7 +83,7 @@ class _FormPageState extends State<FormPage> {
                       print('Password: $_password');
                     }
                   },
-                  child: Text('Submit'),
+                  child: const Text('Submit'),
                 ),
               ),
             ],

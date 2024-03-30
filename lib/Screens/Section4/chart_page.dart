@@ -7,7 +7,7 @@ class ChartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Chart Widget"),
+        title: const Text("Chart Widget"),
       ),
     );
   }

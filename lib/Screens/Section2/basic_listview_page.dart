@@ -7,10 +7,10 @@ class BasicListViewPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Basic List View"),
+        title: const Text("Basic List View"),
       ),
       body: ListView(
-        children: [
+        children: const [
           ListTile(
             leading: Icon(Icons.map),
             title: Text('Map'),

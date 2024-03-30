@@ -18,7 +18,7 @@ class _ProgressBarPageState extends State<ProgressBarPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Progress Bar Widget Demo"),
+          title: const Text("Progress Bar Widget Demo"),
         ),
         body: Center(
         child: Padding(
@@ -26,15 +26,15 @@ class _ProgressBarPageState extends State<ProgressBarPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Linear Progress Bar"),
-              SizedBox(height: 10,),
+              const Text("Linear Progress Bar"),
+              const SizedBox(height: 10,),
               LinearProgressIndicator(
                 backgroundColor: Colors.cyan,
-                valueColor: AlwaysStoppedAnimation<Color>(Colors.red),
+                valueColor: const AlwaysStoppedAnimation<Color>(Colors.red),
                 value: _progressValue,
               ),
               Text('${(_progressValue * 100).round()}%'),
-              SizedBox(height: 10,),
+              const SizedBox(height: 10,),
               ElevatedButton.icon(
                 onPressed: () {
                   setState(() {
@@ -43,15 +43,15 @@ class _ProgressBarPageState extends State<ProgressBarPage> {
                   });
                   _updateProgress();
                 },
-                icon: Icon(Icons.download),
-                label: Text('Download'),
+                icon: const Icon(Icons.download),
+                label: const Text('Download'),
               ),
-              SizedBox(height: 10,),
+              const SizedBox(height: 10,),
               _loading ?
-                CircularProgressIndicator(
+              const CircularProgressIndicator(
                   backgroundColor: Colors.red,
                   strokeWidth: 8.0,
-                ): Text("Click to download file"),
+                ): const Text("Click to download file"),
             ],
           ),
         )
@@ -60,8 +60,8 @@ class _ProgressBarPageState extends State<ProgressBarPage> {
   }
 
   void _updateProgress() {
-    const oneSec = const Duration(seconds: 1);
-    new Timer.periodic(oneSec, (Timer t) {
+    const oneSec = Duration(seconds: 1);
+    Timer.periodic(oneSec, (Timer t) {
       setState(() {
         _progressValue += 0.1;
         // we "finish" downloading here

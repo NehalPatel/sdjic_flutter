@@ -8,14 +8,14 @@ class ToastPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Toast Widget"),
+        title: const Text("Toast Widget"),
       ),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
             showToast();
           },
-          child: Text("Simple Toast Message"),
+          child: const Text("Simple Toast Message"),
         ),
       ),
     );

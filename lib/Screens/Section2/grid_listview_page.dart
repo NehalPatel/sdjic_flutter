@@ -25,7 +25,7 @@ class GridListViewPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Grid List View"),
+        title: const Text("Grid List View"),
       ),
       body: Center(
         child: GridView.count(
@@ -40,7 +40,7 @@ class GridListViewPage extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
                             Expanded(child: Icon(choices[index].icon, size:50.0)),
-                            Text(choices[index].title, style: TextStyle(fontSize: 30),),
+                            Text(choices[index].title, style: const TextStyle(fontSize: 30),),
                           ]
                         ),
                       )

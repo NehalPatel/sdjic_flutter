@@ -35,7 +35,7 @@ class _SwitchPageState extends State<SwitchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Swtich Widget Demo"),
+        title: const Text("Swtich Widget Demo"),
       ),
       body: Center(
         child: Column(
@@ -45,7 +45,7 @@ class _SwitchPageState extends State<SwitchPage> {
               onChanged: toggleSwitch,
               value: isSwitched,
             ),
-            Text("Send SMS")
+            const Text("Send SMS")
           ],
         ),
       ),

@@ -14,7 +14,7 @@ class _RadioButtonPageState extends State<RadioButtonPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Radio Button Widget Demo"),
+        title: const Text("Radio Button Widget Demo"),
       ),
       body: Center(
         child: Padding(
@@ -22,9 +22,9 @@ class _RadioButtonPageState extends State<RadioButtonPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(height: 10,),
-              Text("SDJIC Available Courses", style: TextStyle(fontSize: 30),),
-              SizedBox(height: 10,),
+              const SizedBox(height: 10,),
+              const Text("SDJIC Available Courses", style: TextStyle(fontSize: 30),),
+              const SizedBox(height: 10,),
               ListTile(
                 title: const Text('BCA'),
                 leading: Radio(
@@ -63,7 +63,7 @@ class _RadioButtonPageState extends State<RadioButtonPage> {
               ),
               ElevatedButton(onPressed: (){
                 print("selected course: $_selectedCourse");
-              }, child: Text("Save"))
+              }, child: const Text("Save"))
             ],
           ),
         ),

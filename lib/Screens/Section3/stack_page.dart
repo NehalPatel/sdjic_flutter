@@ -7,7 +7,7 @@ class StackPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Stack Widget"),
+        title: const Text("Stack Widget"),
       ),
       body: Stack(
         children: [

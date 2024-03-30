@@ -15,7 +15,7 @@ class _CheckboxPageState extends State<CheckboxPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Checkbox Widget Demo"),
+        title: const Text("Checkbox Widget Demo"),
       ),
       body: Center(
         child: Padding(
@@ -23,26 +23,26 @@ class _CheckboxPageState extends State<CheckboxPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Checkbox without Header and Subtitle: ',style: TextStyle(fontSize: 17.0), ),
+              const Text('Checkbox without Header and Subtitle: ',style: TextStyle(fontSize: 17.0), ),
               Checkbox(
                 checkColor: Colors.greenAccent,
                 activeColor: Colors.red,
-                value: this.valuefirst,
+                value: valuefirst,
                 onChanged: (bool? value) {
                   setState(() {
-                    this.valuefirst = value!;
+                    valuefirst = value!;
                   });
                 },
               ),
-              Divider(),
+              const Divider(),
               CheckboxListTile(
                 secondary: const Icon(Icons.alarm),
                 title: const Text('Ringing at 4:30 AM every day'),
-                subtitle: Text('Ringing after 12 hours'),
-                value: this.valuefirst,
+                subtitle: const Text('Ringing after 12 hours'),
+                value: valuefirst,
                 onChanged: (bool? value) {
                   setState(() {
-                    this.valuefirst = value!;
+                    valuefirst = value!;
                   });
                 },
               ),
@@ -50,11 +50,11 @@ class _CheckboxPageState extends State<CheckboxPage> {
                 controlAffinity: ListTileControlAffinity.trailing,
                 secondary: const Icon(Icons.alarm),
                 title: const Text('Ringing at 5:00 AM every day'),
-                subtitle: Text('Ringing after 12 hours'),
-                value: this.valuesecond,
+                subtitle: const Text('Ringing after 12 hours'),
+                value: valuesecond,
                 onChanged: (bool? value) {
                   setState(() {
-                    this.valuesecond = value!;
+                    valuesecond = value!;
                   });
                 },
               ),

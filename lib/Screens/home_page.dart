@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final screenHeight = MediaQuery.of(context).size.height;
+    // final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
@@ -20,10 +20,10 @@ class HomePage extends StatelessWidget {
           MyPopupMenu()
         ],
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
-        child: Container(
+        child: SizedBox(
           width: screenWidth,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -41,16 +41,16 @@ class HomePage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Column(
                   children: [
-                    Text("5.1", style: TextStyle(fontSize: 18),),
-                    Divider(),
+                    const Text("5.1", style: TextStyle(fontSize: 18),),
+                    const Divider(),
                     GestureDetector(
                       onTap: () {
                         Navigator.pushNamed(context, "/s1/text");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.abc),
                           title: Text("Text Widget"),
@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
                       onTap: () {
                         Navigator.pushNamed(context, "/s1/textfield");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.text_fields),
                           title: Text("TextField Widget"),
@@ -74,7 +74,7 @@ class HomePage extends StatelessWidget {
                       onTap: () {
                         Navigator.pushNamed(context, "/s1/buttons");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.smart_button),
                           title: Text("Button Widget"),
@@ -86,7 +86,7 @@ class HomePage extends StatelessWidget {
                       onTap: () {
                         Navigator.pushNamed(context, "/s1/slider");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.slideshow),
                           title: Text("Slider Widget"),
@@ -98,7 +98,7 @@ class HomePage extends StatelessWidget {
                       onTap: () {
                         Navigator.pushNamed(context, "/s1/image_slider");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.favorite),
                           title: Text("Image Slider Widget"),
@@ -106,13 +106,13 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Text("5.2", style: TextStyle(fontSize: 18),),
-                    Divider(),
+                    const Text("5.2", style: TextStyle(fontSize: 18),),
+                    const Divider(),
                     GestureDetector(
                       onTap: () {
                         Navigator.pushNamed(context, "/s2/checkbox");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.check_box),
                           title: Text("Checkbox Widget"),
@@ -124,7 +124,7 @@ class HomePage extends StatelessWidget {
                       onTap: () {
                         Navigator.pushNamed(context, "/s2/radio");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.radio_button_checked),
                           title: Text("Radio Button Widget"),
@@ -136,7 +136,7 @@ class HomePage extends StatelessWidget {
                       onTap: () {
                         Navigator.pushNamed(context, "/s2/progress");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.cached),
                           title: Text("Progress Bar Widget"),
@@ -148,7 +148,7 @@ class HomePage extends StatelessWidget {
                       onTap: () {
                         Navigator.pushNamed(context, "/s2/listview");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.list),
                           title: Text("List Widget"),
@@ -156,13 +156,13 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Text("5.3", style: TextStyle(fontSize: 18),),
-                    Divider(),
+                    const Text("5.3", style: TextStyle(fontSize: 18),),
+                    const Divider(),
                     GestureDetector(
                       onTap: () {
                         Navigator.pushNamed(context, "/s3/stack");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.stacked_bar_chart_rounded),
                           title: Text("Stack Widget"),
@@ -174,7 +174,7 @@ class HomePage extends StatelessWidget {
                       onTap: () {
                         Navigator.pushNamed(context, "/s3/form");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.document_scanner),
                           title: Text("Form Widget"),
@@ -186,7 +186,7 @@ class HomePage extends StatelessWidget {
                       onTap: () {
                         Navigator.pushNamed(context, "/s3/alertdialog");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.add_alert),
                           title: Text("AlertDialog Widget"),
@@ -198,7 +198,7 @@ class HomePage extends StatelessWidget {
                       onTap: () {
                         Navigator.pushNamed(context, "/s3/tooltips");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.tips_and_updates),
                           title: Text("Tooltip Widget"),
@@ -206,13 +206,13 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Text("5.4", style: TextStyle(fontSize: 18),),
-                    Divider(),
+                    const Text("5.4", style: TextStyle(fontSize: 18),),
+                    const Divider(),
                     GestureDetector(
                       onTap: () {
                         Navigator.pushNamed(context, "/s4/toast");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.message),
                           title: Text("Toast Widget"),
@@ -224,7 +224,7 @@ class HomePage extends StatelessWidget {
                       onTap: () {
                         Navigator.pushNamed(context, "/s4/switch");
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.toggle_on),
                           title: Text("Switch Widget"),
@@ -241,7 +241,7 @@ class HomePage extends StatelessWidget {
                             backgroundColor: Colors.red
                         );
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.bar_chart),
                           title: Text("Chart Widget"),
@@ -258,7 +258,7 @@ class HomePage extends StatelessWidget {
                             backgroundColor: Colors.red
                         );
                       },
-                      child: Card(
+                      child: const Card(
                         child: ListTile(
                           leading: Icon(Icons.document_scanner_outlined),
                           title: Text("Flutter Form Widget"),

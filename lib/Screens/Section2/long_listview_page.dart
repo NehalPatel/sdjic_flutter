@@ -9,13 +9,13 @@ class LongListViewPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Long List View"),
+        title: const Text("Long List View"),
       ),
       body: ListView.builder(
           itemCount: products.length,
           itemBuilder: (context, index){
             return ListTile(
-              title: Text('${products[index]}'),
+              title: Text(products[index]),
             );
           }
       ),

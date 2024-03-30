@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sdjic_flutter/components/my_drawer.dart';
-import 'package:sdjic_flutter/components/my_popup_menu.dart';
 
 class SliderPage extends StatefulWidget {
   const SliderPage({Key? key}) : super(key: key);
@@ -17,7 +15,7 @@ class _SliderPageState extends State<SliderPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Slider Widget Demo"),
+        title: const Text("Slider Widget Demo"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -72,7 +70,7 @@ class _SliderPageState extends State<SliderPage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
         onPressed: (){},
       ),
     );

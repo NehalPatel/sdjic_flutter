@@ -10,7 +10,7 @@ class MyDropdownButton extends StatefulWidget {
 class _MyDropdownButtonState extends State<MyDropdownButton> {
 
   String _selectedValue = 'Option 1';
-  List<String> _dropdownValues = ['Option 1', 'Option 2', 'Option 3'];
+  final List<String> _dropdownValues = ['Option 1', 'Option 2', 'Option 3'];
 
   @override
   Widget build(BuildContext context) {

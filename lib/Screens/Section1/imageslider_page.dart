@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
-import 'package:sdjic_flutter/components/my_drawer.dart';
-import 'package:sdjic_flutter/components/my_popup_menu.dart';
 
 class ImageSliderPage extends StatelessWidget {
   ImageSliderPage({Key? key}) : super(key: key);
@@ -19,7 +17,7 @@ class ImageSliderPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Image Slider Widget Demo"),
+        title: const Text("Image Slider Widget Demo"),
       ),
       body: Center(
         child: Padding(
@@ -27,8 +25,8 @@ class ImageSliderPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("SDJIC - BCA Department", style: TextStyle(fontSize: 30),),
-              SizedBox(height: 20,),
+              const Text("SDJIC - BCA Department", style: TextStyle(fontSize: 30),),
+              const SizedBox(height: 20,),
               SizedBox(
                 height: 300,
                 width: 300,
@@ -42,7 +40,7 @@ class ImageSliderPage extends StatelessWidget {
                   itemCount: imageList.length,
                   autoplay: true,
                   autoplayDelay: 5000,
-                  pagination: SwiperPagination(),
+                  pagination: const SwiperPagination(),
                 ),
               ),
             ],

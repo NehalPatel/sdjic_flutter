@@ -17,26 +17,26 @@ class MyDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.home),
+            leading: const Icon(Icons.home),
             title: const Text("Home"),
             onTap: () {
               Navigator.pushNamedAndRemoveUntil(context, "/", (route) => false);
             },
           ),
           ListTile(
-            leading: Icon(Icons.settings),
+            leading: const Icon(Icons.settings),
             title: const Text("Settings"),
             onTap: () {},
           ),
           ListTile(
-            leading: Icon(Icons.account_circle),
+            leading: const Icon(Icons.account_circle),
             title: const Text("About"),
             onTap: () {
               Navigator.pushNamed(context, "/about");
             },
           ),
           ListTile(
-            leading: Icon(Icons.contact_mail),
+            leading: const Icon(Icons.contact_mail),
             title: const Text("Contact"),
             onTap: () {},
           ),

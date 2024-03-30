@@ -16,8 +16,8 @@ class AboutPage extends StatelessWidget {
           MyPopupMenu()
         ],
       ),
-      drawer: MyDrawer(),
-      body: SafeArea(
+      drawer: const MyDrawer(),
+      body: const SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[

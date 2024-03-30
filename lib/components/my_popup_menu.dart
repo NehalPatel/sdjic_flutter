@@ -6,26 +6,26 @@ class MyPopupMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PopupMenuButton(itemBuilder: (context) =>[
-      PopupMenuItem(
+      const PopupMenuItem(
+        value: 'cart',
         child: ListTile(
           leading: Icon(Icons.shopping_bag),
           title: Text('Cart'),
         ),
-        value: 'cart',
       ),
-      PopupMenuItem(
+      const PopupMenuItem(
+        value: 'settings',
         child: ListTile(
           leading: Icon(Icons.settings),
           title: Text('Settings'),
         ),
-        value: 'settings',
       ),
-      PopupMenuItem(
+      const PopupMenuItem(
+        value: 'logout',
         child: ListTile(
           leading: Icon(Icons.logout),
           title: Text('Logout'),
         ),
-        value: 'logout',
       ),
     ]);
   }
