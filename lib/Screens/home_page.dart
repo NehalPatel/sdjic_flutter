@@ -234,12 +234,7 @@ class HomePage extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        Fluttertoast.showToast(
-                            msg: "Coming Soon",
-                            toastLength: Toast.LENGTH_LONG,
-                            gravity: ToastGravity.BOTTOM,
-                            backgroundColor: Colors.red
-                        );
+                        Navigator.pushNamed(context, "/s4/chart");
                       },
                       child: const Card(
                         child: ListTile(

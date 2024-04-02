@@ -16,6 +16,7 @@ dependencies:
   google_fonts: ^4.0.3
   flutter_swiper_null_safety: ^1.0.2
   fluttertoast: ^8.2.1
+  fl_chart: ^0.67.0
 
 dev_dependencies:
   flutter_test:

@@ -61,6 +61,7 @@ class MyApp extends StatelessWidget {
         '/s3/tooltips' : (context) => const ToolTipsPage(),
         '/s4/toast' : (context) => const ToastPage(),
         '/s4/switch' : (context) => const SwitchPage(),
+        '/s4/chart' : (context) => const ChartPage(),
       },
       initialRoute: "/",
     );
