@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 
 class ImageSliderPage extends StatelessWidget {
-  ImageSliderPage({Key? key}) : super(key: key);
+  ImageSliderPage({super.key});
 
   final List<String> imageList = [
     'https://www.sdjic.org/storage/2706/conversions/vaibhav-desai-image_300x300.jpg',

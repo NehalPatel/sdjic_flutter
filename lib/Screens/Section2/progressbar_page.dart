@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 class ProgressBarPage extends StatefulWidget {
-  const ProgressBarPage({Key? key}) : super(key: key);
+  const ProgressBarPage({super.key});
 
   @override
   State<ProgressBarPage> createState() => _ProgressBarPageState();

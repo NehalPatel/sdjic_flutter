@@ -78,9 +78,9 @@ class _FormPageState extends State<FormPage> {
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
                       _formKey.currentState!.save();
-                      print('Name: $_name');
-                      print('Email: $_email');
-                      print('Password: $_password');
+                      debugPrint('Name: $_name');
+                      debugPrint('Email: $_email');
+                      debugPrint('Password: $_password');
                     }
                   },
                   child: const Text('Submit'),

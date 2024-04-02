@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:sdjic_flutter/Screens/Section1/mydropdown_button.dart';
 
 class ButtonPage extends StatelessWidget {
-  const ButtonPage({Key? key}) : super(key: key);
+  const ButtonPage({super.key});
 
   @override
   Widget build(BuildContext context) {

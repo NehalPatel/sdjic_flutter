@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CheckboxPage extends StatefulWidget {
-  const CheckboxPage({Key? key}) : super(key: key);
+  const CheckboxPage({super.key});
 
   @override
   State<CheckboxPage> createState() => _CheckboxPageState();

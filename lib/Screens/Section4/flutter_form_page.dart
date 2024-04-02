@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FlutterFormPage extends StatelessWidget {
-  const FlutterFormPage({Key? key}) : super(key: key);
+  const FlutterFormPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class RadioButtonPage extends StatefulWidget {
-  const RadioButtonPage({Key? key}) : super(key: key);
+  const RadioButtonPage({super.key});
 
   @override
   State<RadioButtonPage> createState() => _RadioButtonPageState();
@@ -62,7 +62,7 @@ class _RadioButtonPageState extends State<RadioButtonPage> {
                 ),
               ),
               ElevatedButton(onPressed: (){
-                print("selected course: $_selectedCourse");
+                debugPrint("selected course: $_selectedCourse");
               }, child: const Text("Save"))
             ],
           ),
