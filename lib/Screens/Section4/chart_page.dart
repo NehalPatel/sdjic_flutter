@@ -8,12 +8,12 @@ class ChartPage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final List<FlSpot> data = [
-      FlSpot(0, 0), // Sunday (X = 0, Y = 0)
-      FlSpot(1, 3), // Monday (X = 1, Y = 3)
-      FlSpot(2, 5), // Tuesday (X = 2, Y = 5)
-      FlSpot(3, 2), // Wednesday (X = 3, Y = 2)
-      FlSpot(4, 4), // Thursday (X = 4, Y = 4)
-      FlSpot(5, 6), // Friday (X = 5, Y = 6)
+      const FlSpot(0, 0), // Sunday (X = 0, Y = 0)
+      const FlSpot(1, 3), // Monday (X = 1, Y = 3)
+      const FlSpot(2, 5), // Tuesday (X = 2, Y = 5)
+      const FlSpot(3, 2), // Wednesday (X = 3, Y = 2)
+      const FlSpot(4, 4), // Thursday (X = 4, Y = 4)
+      const FlSpot(5, 6), // Friday (X = 5, Y = 6)
     ];
 
     return Scaffold(
