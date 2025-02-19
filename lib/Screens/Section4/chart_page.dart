@@ -2,7 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class ChartPage extends StatelessWidget {
-  const ChartPage({Key? key}) : super(key: key);
+  const ChartPage({super.key});
 
   @override
   Widget build(BuildContext context) {

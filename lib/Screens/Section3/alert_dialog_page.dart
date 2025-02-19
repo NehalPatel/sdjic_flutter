@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AlertDialogPage extends StatelessWidget {
-  AlertDialogPage({Key? key}) : super(key: key);
+  AlertDialogPage({super.key});
 
   final TextEditingController _alertInputController = TextEditingController();
 
@@ -81,21 +81,21 @@ class AlertDialogPage extends StatelessWidget {
                           children: [
                             SimpleDialogOption(
                               onPressed: (){
-                                print("BBA");
+                                debugPrint("BBA");
                                 Navigator.of(context).pop();
                               },
                               child: const Text("BBA"),
                             ),
                             SimpleDialogOption(
                               onPressed: (){
-                                print("BCA");
+                                debugPrint("BCA");
                                 Navigator.of(context).pop();
                               },
                               child: const Text("BCA"),
                             ),
                             SimpleDialogOption(
                               onPressed: (){
-                                print("BCom");
+                                debugPrint("BCom");
                                 Navigator.of(context).pop();
                               },
                               child: const Text("BCom"),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HorizontalListViewPage extends StatelessWidget {
-  const HorizontalListViewPage({Key? key}) : super(key: key);
+  const HorizontalListViewPage({super.key});
 
   @override
   Widget build(BuildContext context) {

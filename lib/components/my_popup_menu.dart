@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyPopupMenu extends StatelessWidget {
-  const MyPopupMenu({Key? key}) : super(key: key);
+  const MyPopupMenu({super.key});
 
   @override
   Widget build(BuildContext context) {

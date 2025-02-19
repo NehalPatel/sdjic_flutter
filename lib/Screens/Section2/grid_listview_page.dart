@@ -19,7 +19,7 @@ const List<Choice> choices = <Choice>[
 ];
 
 class GridListViewPage extends StatelessWidget {
-  const GridListViewPage({Key? key}) : super(key: key);
+  const GridListViewPage({super.key});
 
   @override
   Widget build(BuildContext context) {

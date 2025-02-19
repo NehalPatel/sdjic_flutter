@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LongListViewPage extends StatelessWidget {
-  LongListViewPage({Key? key}) : super(key: key);
+  LongListViewPage({super.key});
 
   final List<String> products = List<String>.generate(50, (i) => "Product List: $i");
 

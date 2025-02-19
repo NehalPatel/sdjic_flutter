@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class ToastPage extends StatelessWidget {
-  const ToastPage({Key? key}) : super(key: key);
+  const ToastPage({super.key});
 
   @override
   Widget build(BuildContext context) {

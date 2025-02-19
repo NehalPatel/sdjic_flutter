@@ -3,7 +3,7 @@ import 'package:sdjic_flutter/components/my_drawer.dart';
 import 'package:sdjic_flutter/components/my_popup_menu.dart';
 
 class AboutPage extends StatelessWidget {
-  const AboutPage({Key? key}) : super(key: key);
+  const AboutPage({super.key});
 
   @override
   Widget build(BuildContext context) {

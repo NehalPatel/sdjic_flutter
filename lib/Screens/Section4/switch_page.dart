@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SwitchPage extends StatefulWidget {
-  const SwitchPage({Key? key}) : super(key: key);
+  const SwitchPage({super.key});
 
   @override
   State<SwitchPage> createState() => _SwitchPageState();
@@ -19,7 +19,7 @@ class _SwitchPageState extends State<SwitchPage> {
         isSwitched = true;
         textValue = 'Switch Button is ON';
       });
-      print('Switch Button is ON');
+      debugPrint('Switch Button is ON');
     }
     else
     {
@@ -27,7 +27,7 @@ class _SwitchPageState extends State<SwitchPage> {
         isSwitched = false;
         textValue = 'Switch Button is OFF';
       });
-      print('Switch Button is OFF');
+      debugPrint('Switch Button is OFF');
     }
   }
 

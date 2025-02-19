@@ -13,7 +13,7 @@ dependencies:
 
 
   cupertino_icons: ^1.0.2
-  google_fonts: ^4.0.3
+  google_fonts: ^6.2.1
   flutter_swiper_null_safety: ^1.0.2
   fluttertoast: ^8.2.1
   fl_chart: ^0.67.0
@@ -22,7 +22,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.2
 
 flutter:
 
